@@ -55,17 +55,17 @@ A simple playbook would be:
 
 However, most of the variables do not have default values, as many of them are project specific things like username and password. It might be best to store these items using ansible-vault. Nonsecure items could be placed in playbook vars or in a separate vars file. So your playbook might look more like this:
 
-   - hosts: servers
-     vars:
-         pgbase_trigger_file: "foo" 
-         pgbase_connect_port: 5432
-         pgbase_connect_host: 1.2.3.4
-         pgbase_standby_mode: "on"
-         pgbase_create_recover_file: True
-     vars_files:
-         - project-vault.yml
-     roles:
-         - { role: chouseknecht.pg_basebackup }
+    - hosts: servers
+      vars:
+          pgbase_trigger_file: "foo" 
+          pgbase_connect_port: 5432
+          pgbase_connect_host: 1.2.3.4
+          pgbase_standby_mode: "on"
+          pgbase_create_recover_file: True
+      vars_files:
+          - project-vault.yml
+      roles:
+          - { role: chouseknecht.pg_basebackup }
 
 License
 -------
@@ -75,4 +75,4 @@ MIT
 Author Information
 ------------------
 
-Chris Houseknecht [@chouseknecht](https://twitter.com/chouseknecht]
+Chris Houseknecht [@chouseknecht](https://twitter.com/chouseknecht)
