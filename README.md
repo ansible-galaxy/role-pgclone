@@ -76,4 +76,5 @@ Author Information
 ------------------
 
 Chris Houseknecht [@chouseknecht](https://twitter.com/chouseknecht)
-Ansible, Inc.
+Copyright 2016 RedHat | Ansible
+
