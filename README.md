@@ -76,3 +76,4 @@ Author Information
 ------------------
 
 Chris Houseknecht [@chouseknecht](https://twitter.com/chouseknecht)
+Ansible, Inc.
