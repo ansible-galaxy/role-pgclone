@@ -62,6 +62,7 @@ pgbase_save_files:
 
 Example Playbook
 ----------------
+
 A simple playbook would be: 
 
     - hosts: servers
