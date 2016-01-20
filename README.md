@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ansible-galaxy/role-pgclone.svg?branch=master)](https://travis-ci.org//ansible-galayx/role-pglcone)
+[![Build Status](https://travis-ci.org/ansible-galaxy/role-pgclone.svg?branch=master)](https://travis-ci.org/ansible-galaxy/role-pglcone)
 
 pgclone
 =======
