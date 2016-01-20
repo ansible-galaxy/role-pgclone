@@ -91,5 +91,6 @@ Author Information
 ------------------
 
 Chris Houseknecht [@chouseknecht](https://twitter.com/chouseknecht)
+
 Copyright 2016 RedHat | Ansible
 
