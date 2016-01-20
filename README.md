@@ -3,47 +3,62 @@
 pgclone
 =======
 
-Use pgclone to clone a PostgreSQL cluster from a remote host. Optionally create a recovery.conf and 
+Use pgclone to clone a PostgreSQL cluster from a remote host, and optionally create a recovery.conf and 
 put the clone in standby mode.
 
 
 Requirements
 ------------
 
-Requires a running PostgreSQL cluster and assumes PostgreSQL is installed on the target host.
+Requires a remote, running PostgreSQL cluster. Assumes PostgreSQL is installed on the target host.
 
 
 Role Variables
 --------------
 
-pgbase_output_dir - Directory to wite the output to. Existing contents will be destroyed.
+pgbase_output_dir:
 
-pgbase_service_name - Name of the systemd postgresql service, typically "postgresql".
+> Directory to wite the output to. Existing contents will be destroyed.
 
-pgbase_create_recover_file - True, if recovery.conf should be created.
+pgbase_service_name:
 
-pgbase_standby_mode - Set to 'on', if the clone will be started as a standby.
+> Name of the systemd postgresql service, typically "postgresql".
 
-pgbase_connect_host - Name or IP address the primary database host.
+pgbase_create_recover_file:
 
-pgbase_connect_port - Connection port on the primary database host.
+> True, if recovery.conf should be created.
 
-pgbase_connect_user - PostgreSQL username to use when connecting to the primary database. 
+pgbase_standby_mode:
 
-pgbase_connect_pass - Password for connecting to the primary database.
+> Set to 'on', if the clone will be started as a standby.
 
-pgbase_trigger_file - Path of trigger file used to end recover in standby mode.
+pgbase_connect_host:
 
-pgbase_backup_dir - Path where backup files will be kept. 
+> Name or IP address the primary database host.
 
-pgbase_save_files - Array of files to backup prior to starting the backup process. 
+pgbase_connect_port:
 
+> Connection port on the primary database host.
 
-Dependencies
-------------
+pgbase_connect_user:
 
-None.
+> PostgreSQL username to use when connecting to the primary database. 
 
+pgbase_connect_pass:
+
+> Password for connecting to the primary database.
+
+pgbase_trigger_file:
+
+> Path of trigger file used to end recover in standby mode.
+
+pgbase_backup_dir:
+
+> Path where backup files will be kept. 
+
+pgbase_save_files:
+
+> Array of files to backup prior to starting the backup process. 
 
 Example Playbook
 ----------------
