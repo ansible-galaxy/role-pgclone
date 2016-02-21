@@ -4,7 +4,7 @@ pgclone
 =======
 
 Use pgclone to clone a PostgreSQL cluster from a remote host, and optionally create a recovery.conf and 
-put the clone in standby mode.
+put the clone in standby mode. And things.
 
 
 Requirements
